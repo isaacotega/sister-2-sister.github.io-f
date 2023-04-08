@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<meta charset="UTF-8"/>
+			
+		<link rel="stylesheet" href="styles/index.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="styles/hire-shipper.css" type="text/css"/>
+		
+		<script>
+			
+			var page = {
+				rootPath: "",
+				activeNav: "shippers"
+			}
+			
+		</script>
+		
+		<script src="scripts/JQuery.js"></script>
+		
+		<script src="scripts/index.js"></script>
+		
+		<script src="scripts/shippers.js"></script>
+		
+	</head>
+		
+	<body>
+	
+		<header>
+		<!--
+			<span id="menuIcon">
+				
+				<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+			
+			</span>
+			-->
+			<label id="appText">Hire Shipper</label>
+			
+			<span id="iconHolder">
+			
+				<span id="menu" class="icon">
+					
+					<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 16.495c1.242 0 2.25 1.008 2.25 2.25s-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25 1.008-2.25 2.25-2.25zm0-6.75c1.242 0 2.25 1.008 2.25 2.25s-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25 1.008-2.25 2.25-2.25zm0-6.75c1.242 0 2.25 1.008 2.25 2.25s-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25 1.008-2.25 2.25-2.25z"/></svg>
+					
+				</span>
+			
+			</span>
+		
+			<div id="menuHolder">
+			
+				<div id="optionHolder">
+			
+					<span class="option" id="exit">Exit</span>
+					
+				</div>
+				
+			</div>
+		
+		</header>
+		
+		<div id="menuBackground"></div>
+				
+		<div id="main">
+		
+			
+			<form class="form" id="hireForm" action="checkout.html">
+			
+				<input type="text" id="inp" class="input" placeholder="Detail 1">
+			
+				<input type="text" id="inp" class="input" placeholder="Detail 2">
+			
+				<input type="text" id="inp" class="input" placeholder="Detail 3">
+			
+				<input type="text" id="inp" class="input" placeholder="Detail 4">
+			
+				<button id="submitButton">Proceed to Payment</button>
+			
+			</form>
+		
+			
+			
+		</div>
+		
+		
+		<div id="bottomNav"></div>
+			
+		
+	</body>
+
+</html>

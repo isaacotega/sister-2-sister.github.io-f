@@ -1,0 +1,190 @@
+#main {
+	padding-bottom: 180px;
+}
+
+#profile {
+	padding: 5px 10px;
+}
+
+#profile #profilePicture {
+	width: 430px;
+	height: 460px;
+	border-radius: 20px;
+}
+
+#profile #username {
+	display: block;
+	font-size: 60px;
+	line-height: 150px;
+	font-weight: 700;
+}
+
+#profile #location {
+	display: block;
+	font-size: 30px;
+}
+
+#profile svg {
+	height: 30px;
+	width: 30px;
+}
+
+#profile label {
+	font-size: 30px;
+}
+
+#profile #ratings {
+	width: 100%;
+	margin: 10px 0;
+	text-align: left;
+}
+
+#profile #ratings svg {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+#profile #ratings [rated] {
+	fill: yellow;
+}
+
+#lblReviews {
+	display: block;
+	font-size: 40px;
+	line-height: 150px;
+	font-weight: 700;
+	margin: 5px 0 0 0;
+}
+
+#reviews {
+	
+}
+
+#reviews .review {
+	padding: 0 10px;
+	border-top: 3px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+#reviews #rating {
+	width: 100%;
+	margin: 10px 0;
+	text-align: left;
+}
+
+#reviews #rating svg {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+#reviews #rating [rated] {
+	fill: yellow;
+}
+
+#reviews #title {
+	font-size: 28px;
+	margin: 10px 0;
+}
+
+#reviews #comment {
+	font-size: 18px;
+	line-height: 30px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+#reviews #info {
+	font-size: 15px;
+	margin: 10px 0;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#reviews #date {
+	float: right;
+	margin: 0 15px 0 0;
+	font-size: 25px;
+}
+
+#lblAllReviews {
+	display: block;
+	width: 90%;
+	padding: 30px 5%;
+	font-size: 35px;
+	font-weight: 700;
+	color: #DE5D82;
+	text-align: right;
+}
+
+#allReviews {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 8vh;
+	background-color: white;
+	overflow-y: scroll;
+}
+
+#allReviews #heading {
+	display: block;
+	font-size: 60px;
+	line-height: 150px;
+	font-weight: 700;
+}
+
+#allReviews .review {
+	padding: 0 10px;
+	border-top: 3px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+#allReviews #rating {
+	width: 100%;
+	margin: 10px 0;
+	text-align: left;
+}
+
+#allReviews #rating svg {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+#allReviews #rating [rated] {
+	fill: yellow;
+}
+
+#allReviews #title {
+	font-size: 28px;
+	margin: 10px 0;
+}
+
+#allReviews #comment {
+	font-size: 18px;
+	line-height: 30px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+#allReviews #info {
+	font-size: 15px;
+	margin: 10px 0;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#allReviews #date {
+	float: right;
+	margin: 0 15px 0 0;
+	font-size: 25px;
+}
+
+#hireButton {
+	padding: 40px 20px;
+	background-color: #DE5D82;
+	font-size: 30px;
+	color: white;
+	border-radius: 20px;
+}
+
+#hireButton svg {
+	fill: white;
+}

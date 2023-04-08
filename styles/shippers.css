@@ -1,0 +1,70 @@
+#shippersContainer {
+	padding-top: 10px;
+	padding-bottom: 180px;
+}
+
+#shippersContainer #category {
+	display: block;
+	margin: 80px 0 60px 10px;
+	font-size: 55px;
+	font-weight: 700;
+}
+
+#shippersContainer #slideshowHolder {
+	overflow: scroll;
+	width: 100%;
+}
+
+#shippersContainer #slideshow {
+	width: 100%;
+}
+
+#shippersContainer .shipper {
+	width: 320px;
+//	height: 400px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	padding: 5px 10px;
+	margin: 0 20px;
+	display: inline-block;
+}
+
+#shippersContainer .shipper #profilePicture {
+	width: 320px;
+	height: 350px;
+	border-radius: 20px;
+}
+
+#shippersContainer .shipper #username {
+	display: block;
+	font-size: 40px;
+	line-height: 70px;
+	font-weight: 700;
+}
+
+#shippersContainer .shipper #location {
+	display: block;
+	font-size: 22px;
+	overflow: hidden;
+	height: 30px
+}
+
+#shippersContainer .shipper #location #destinationIcon {
+	margin: 0 0 0 10px;
+}
+
+#shippersContainer .shipper #ratings {
+	width: 100%;
+	margin: 10px 0;
+	text-align: left;
+}
+
+#shippersContainer .shipper #ratings svg {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+#shippersContainer .shipper #ratings [rated] {
+	fill: yellow;
+}

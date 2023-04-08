@@ -1,0 +1,376 @@
+body {
+	 background: white;
+	 margin: 0;
+	-webkit-user-select: none;
+ }
+
+button {
+	outline: none;
+}
+ 
+ input {
+	outline: none;
+}
+
+ textarea {
+	outline: none;
+}
+
+ select {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a:image-link:focus {
+	outline: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+#main {
+	margin-top: 115px;
+}
+ 
+ header {
+	width: 100%;
+	height: 8vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
+	display: block;
+	transition: height 0.3s;
+	z-index: 8;
+	background-color: #DE5D82;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%), linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%), linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%);
+	background-size:20px 20px;
+	background-position: 0 0, 0 10px, 10px -10px, -10px 0px;	
+}
+
+header #appText {
+	margin: 0;
+	line-height: 8vh;
+	font-size: 38px;
+	font-weight: 700;
+	color: white;
+	margin-left: 3vw;
+	display: inline-block;
+}
+
+header [hasSubtext] {
+	transform: translateY(-15px);
+}
+
+header #subText {
+	margin: 0;
+	line-height: 2vw;
+	font-size: 25px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.8);
+	fill: white;
+	margin-left: 3vw;
+	display: block;
+	margin-left: 32px;
+	transform: translateY(-180%);
+}
+ 
+header #subText svg {
+	fill: white;
+	display: inline;
+}
+
+header #sltChapter {
+	//display: none;
+	transform: translateX(-100px);
+	width: 100px;
+	opacity: 0;
+}
+
+header #iconHolder {
+	height: 90px;
+	line-height: 70px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+ 
+header #iconHolder .icon {
+	margin: 0 7px;
+}
+ 
+header #iconHolder .icon svg {
+	height: 50px;
+	width: 50px;
+	transform: translateY(35px);
+	fill: white;
+	transition: 0.3s background-color;
+}
+ 
+header #iconHolder .icon:active {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+header #menuIcon svg {
+	height: 60px;
+	width: 60px;
+	transform: translateY(15px);
+	fill: white;
+	margin-left: 5mm;
+}
+
+header #menuIcon:active {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+header #backIcon svg {
+	height: 60px;
+	width: 60px;
+	transform: translateY(15px);
+	fill: white;
+	margin-left: 5mm;
+}
+
+header #menuHolder {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+}
+
+header #menuHolder #optionHolder {
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	min-width: 400px;
+	max-width: 550px;
+	padding: 3mm 0;
+	border-radius: 7px;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.8);
+	z-index: 9;
+}
+
+#menuBackground {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 7;
+	top: 0;
+	left: 0;
+	display: none;
+}
+ 
+header #menuHolder .option {
+	font-size: 30px;
+	padding: 0 3mm;
+	height: 80px;
+	line-height: 80px;
+	display: block;
+	overflow: hidden;
+	transition: 0.3s background-color;
+	position: relative;
+	z-index: 9;
+	color: black;
+}
+ 
+header #menuHolder .option:active {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+/* Bottom Nav */
+
+#bottomNav {
+	position: fixed;
+	left: -1.5%;
+	bottom: 0;
+	height: 120px;
+	width: 106%;
+	overflow: hidden;
+	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
+	background-color: #DE5D82;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%), linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%), linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%);
+	background-size:20px 20px;
+	background-position: 0 0, 0 10px, 10px -10px, -10px 0px;	
+}
+
+#bottomNav .item {
+	width: 19.5%;
+	display: inline-block;
+	text-align: center;
+	height: 300%;
+	border-radius: 50%;
+	transform: translateY(-38%);
+	transition: background-color 0.2s;
+}
+
+#bottomNav .item:active {
+	background-color: rgba(255, 255, 255, 0.2);
+	
+}
+
+#bottomNav .item svg {
+	width: 45px;
+	height: 45px;
+	margin-top: 73%;
+	fill: white;
+}
+
+#bottomNav .item #hint {
+	color: white;
+	font-size: 20px;
+	line-height: 45px;
+}
+
+#bottomNav [active] {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#bottomNav [active] svg {
+	width: 48px;
+	height: 48px;
+	//margin-top: %;
+	fill: orange;
+}
+
+#bottomNav [active] #hint {
+	color: orange;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+/* Loader */
+
+.loader {
+	width: 40px;
+	height: 40px;
+	border: 5px solid rgba(255, 255, 255, 0.1);
+	border-top: 5px solid white;
+	border-radius: 50%;
+	display: inline-block;
+	-webkit-animation: spin 0.5s linear infinite;
+}
+
+/* Snack */
+
+.snack {
+	background-color: rgba(0, 0, 0, 1);
+	width: 90%;
+	font-size: 28px;
+	color: white;
+	position: fixed;
+	bottom: -120px;
+	left: 3%;
+	padding: 40px 2%;
+	box-shadow: 0 5px 10px 0 indigo;
+}
+
+/* Forn */
+
+.form {
+	width: 100%;
+	text-align: center;
+	margin-top: 150px;
+}
+
+.form .input {
+	width: 80%;
+	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
+	height: 100px;
+	margin: 20px 0;
+	font-size: 36px;
+	color: white;
+	text-indent: 8px;
+	border: 0px solid;
+	border-radius: 10px;
+}
+
+.form .textarea {
+	width: 80%;
+	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
+	height: 200px;
+	margin: 13px 0;
+	font-size: 36px;
+	color: white;
+	text-indent: 8px;
+	border: 0px solid;
+	border-radius: 10px;
+}
+
+.form .select {
+	width: 80%;
+	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
+	height: 100px;
+	margin: 20px 0;
+	font-size: 36px;
+	color: white;
+	text-indent: 8px;
+	border: 0px solid;
+	border-radius: 10px;
+}
+
+.form #submitButton {
+	width: 60%;
+	display: block;
+	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
+	height: 100px;
+	margin: 20px 30%;
+	font-size: 38px;
+	color: white;
+	text-indent: 5px;
+	border: 0px solid;
+	border-radius: 3px;
+	transition: 0.3s background-color;
+}
+
+.form #submitButton:active {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form .label {
+	display: inline-block;
+	transform: translateY(-20px);
+	font-size: 25px;
+	color: white;
+	width: 80%;
+	text-align: left;
+}
+
+/* Animation */
+
+@-webkit-keyframes spin {
+	
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+	
+}
