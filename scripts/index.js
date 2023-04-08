@@ -63,7 +63,7 @@ $(document).ready(function() {
 					
 				</a>
 			
-				<a onclick="window.location.href = 'shippers.html';"` + (page["activeNav"] == "chats" ? " active" : "") + `>
+				<a onclick="window.location.href = 'chats.html';"` + (page["activeNav"] == "chats" ? " active" : "") + `>
 			
 					<div class="item">
 				
@@ -77,7 +77,7 @@ $(document).ready(function() {
 					
 				</a>
 			
-				<a onclick="window.location.href = 'shippers.html';"` + (page["activeNav"] == "shipments" ? " active" : "") + `>
+				<a onclick="window.location.href = 'shipments.html';"` + (page["activeNav"] == "shipments" ? " active" : "") + `>
 			
 					<div class="item">
 				
@@ -91,7 +91,7 @@ $(document).ready(function() {
 					
 				</a>
 			
-				<a onclick="window.location.href = 'shippers.html';"` + (page["activeNav"] == "me" ? " active" : "") + `>
+				<a onclick="window.location.href = 'my-profile.html';"` + (page["activeNav"] == "me" ? " active" : "") + `>
 			
 					<div class="item">
 				

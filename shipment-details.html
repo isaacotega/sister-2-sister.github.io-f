@@ -8,13 +8,13 @@
 			
 		<link rel="stylesheet" href="styles/index.css" type="text/css"/>
 		
-		<link rel="stylesheet" href="styles/public-profile.css" type="text/css"/>
+		<link rel="stylesheet" href="styles/shipment-details.css" type="text/css"/>
 		
 		<script>
 			
 			var page = {
 				rootPath: "",
-				activeNav: "shippers"
+				activeNav: "shipments"
 			}
 			
 		</script>
@@ -37,7 +37,7 @@
 			
 			</span>
 			
-			<label id="appText">Explore Shippers</label>
+			<label id="appText">Shipment Details</label>
 			
 			<span id="iconHolder">
 			
@@ -67,9 +67,9 @@
 		
 		<div id="profile">
 		
-					<img id="profilePicture" src="images/avatar-female.jpg"></img>
+					<img id="profilePicture" src="images/shipment.jpg"></img>
 					
-					<label id="username">charlotte45</label>
+					<label id="title">Shipment by <a onclick="window.location.href = 'private-profile.html?id=123';"><label id="shipperUsername">charlotte45</label></a></label>
 					
 					<label id="location">
 						
@@ -79,7 +79,7 @@
 							
 						</span>
 						
-						<label>Lives In: </label>
+						<label>Shipping from: </label>
 					
 						<label id="from">Texas, USA</label>
 						
@@ -91,64 +91,38 @@
 							
 						</span>
 					
-						<label>Ships to: </label>
+						<label>Shipping to: </label>
 					
 						<label id="to">Lagos, NG</label>
 					
 					</label>
 					
+						<br>
+					
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 1c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-12 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2zm13 5v10h-16v-10h16zm2-6h-2v1c0 1.103-.897 2-2 2s-2-.897-2-2v-1h-8v1c0 1.103-.897 2-2 2s-2-.897-2-2v-1h-2v18h20v-18zm4 3v19h-22v-2h20v-17h2zm-17 7h-2v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4h-2v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+						
+						<label>Date Ordered: </label>
+					
+						<label id="totalShippings">2nd April, 2023</label>
+					
 						<br><br>
 					
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 0l-4.5 16.5-6.097-5.43 5.852-6.175-7.844 5.421-5.411-1.316 18-9zm-11 12.501v5.499l2.193-3.323-2.193-2.176zm-8.698 6.825l-1.439-.507 5.701-5.215 1.436.396-5.698 5.326zm3.262 4.287l-1.323-.565 4.439-4.503 1.32.455-4.436 4.613zm-4.083.387l-1.481-.507 8-7.89 1.437.397-7.956 8z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z"/></svg>
 						
-						<label>Total Shippings: </label>
+						<label>Status: </label>
 					
-						<label id="totalShippings">54</label>
+						<label id="rating">Pending</label>
 					
-						<br><br><br>
+						<br><br>
 					
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4 14.083c0-2.145-2.232-2.742-3.943-3.546-1.039-.54-.908-1.829.581-1.916.826-.05 1.675.195 2.443.465l.362-1.647c-.907-.276-1.719-.402-2.443-.421v-1.018h-1v1.067c-1.945.267-2.984 1.487-2.984 2.85 0 2.438 2.847 2.81 3.778 3.243 1.27.568 1.035 1.75-.114 2.011-.997.226-2.269-.168-3.225-.54l-.455 1.644c.894.462 1.965.708 3 .727v.998h1v-1.053c1.657-.232 3.002-1.146 3-2.864z"/></svg>
 						
-						<label>Rating: </label>
+						<label>Amount Paid: </label>
 					
-						<label id="rating">2.2</label>
+						<label id="rating">$25</label>
 					
-					<div id="ratings">
-					
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/ rated></svg>
-						
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/ rated></svg>
-						
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-						
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-						
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-					
-					</div>
-					
-					<a onclick="window.location.href = 'hire-shipper.html?id=123';">
-					
-					<button id="hireButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 9v1.528c-.476.69-3.815 1.971-9.77 1.971-6.239 0-9.736-1.358-10.23-2.088v-1.411h20zm2-2h-24v3.491c0 2.657 6.154 4.009 12.23 4.009 5.922 0 11.77-1.284 11.77-3.895v-3.605zm-2 8.074v4.926h-20v-5.001c-.823-.337-1.478-.711-2-1.096v8.097h24v-7.949c-.583.402-1.262.741-2 1.023zm-8 1.958c0 1.087-.896 1.968-2 1.968s-2-.881-2-1.968v-1.032h4v1.032zm-5-15.032c-1.104 0-2 .896-2 2v2h2v-1.5c0-.276.224-.5.5-.5h5c.276 0 .5.224.5.5v1.5h2v-2c0-1.104-.896-2-2-2h-6z"/></svg> Hire Shipper</button>
-					
-				</a>
-		
 		</div>
 		
-		
-			<div id="reviewContainer">
-			
-				<label id="lblReviews">Reviews (<label id="reviewNumber">8</label>)</label>
-					
-				<div id="reviews"></div>
-				
-				<label id="lblAllReviews">
-			
-				<a onclick="window.location.href = 'reviews.html?id=123';">All Reviews<a>
-					
-				</label>
-		
-			</div>
 		
 		</div>
 		

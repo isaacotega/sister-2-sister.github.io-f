@@ -1,0 +1,81 @@
+#main {
+	padding-bottom: 180px;
+	padding-top: 40px;
+}
+
+.shipment {
+	width: 100%;
+	height: 300px;
+	border-radius: 20px;
+	padding: 5px 10px;
+	display: block;
+	border-top: 3px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.shipment #infoHolder {
+	display: inline-block;
+	transform: translateY(-70px);
+}
+
+.shipment #profilePicture {
+	width: 260px;
+	height: 300px;
+	border-radius: 20px;
+	border: 5px 0 0 0;
+}
+
+.shipment #title {
+	display: block;
+	font-size: 40px;
+	line-height: 70px;
+	font-weight: 700;
+}
+
+.shipment #location {
+	display: block;
+	font-size: 22px;
+	overflow: hidden;
+	height: 45px
+}
+
+.shipment #date {
+	font-size: 22px;
+}
+
+.shipment #statusHolder svg {
+	fill: orange;
+}
+
+.shipment #status {
+	font-size: 26px;
+	color: orange;
+}
+
+.shipment [status=pending] {
+	color: orange;	
+}
+
+.shipment [status=delivered] {
+	color: green;
+}
+
+.shipment #location #destinationIcon {
+	margin: 0 0 0 10px;
+}
+
+.shipment #ratings {
+	width: 100%;
+	margin: 10px 0;
+	text-align: left;
+}
+
+.shipment #ratings svg {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+.shipment #ratings [rated] {
+	fill: yellow;
+}

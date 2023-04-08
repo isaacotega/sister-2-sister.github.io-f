@@ -8,7 +8,7 @@
 			
 		<link rel="stylesheet" href="styles/index.css" type="text/css"/>
 		
-		<link rel="stylesheet" href="styles/payment-page.css" type="text/css"/>
+		<link rel="stylesheet" href="styles/hire-shipper.css" type="text/css"/>
 		
 		<script>
 			
@@ -23,7 +23,7 @@
 		
 		<script src="scripts/index.js"></script>
 		
-		<script src="scripts/payment.js"></script>
+		<script src="scripts/shippers.js"></script>
 		
 	</head>
 		
@@ -37,7 +37,7 @@
 			
 			</span>
 			
-			<label id="appText">Checkout</label>
+			<label id="appText">Edit Profile</label>
 			
 			<span id="iconHolder">
 			
@@ -65,21 +65,34 @@
 				
 		<div id="main">
 		
-			<form id="paymentForm" action="payment-page.html">
-				
-			<label id="lblAmount">Amount Due today: <label id="amount">$25</label> </label>
 			
-				<input type="number" id="inpCardNumber" class="input" placeholder="Card Number" maxlength="16">
+			<form class="form" id="profileEditForm" action="my-profile.html">
 			
-				<input type="text" id="inpExpirationDate" class="input" placeholder="00/00" maxlength="5">
+				<input type="text" id="inp" class="input" placeholder="Full Name">
 			
-				<input type="number" id="inpCVV" class="input" placeholder="CVV" maxlength="3">
+				<input type="text" id="inp" class="input" placeholder="Username">
 			
-				<button id="submitButton">Validate</button>
+				<input type="text" id="inp" class="input" placeholder="Address">
+			
+				<input type="text" id="inp" class="input" placeholder="Phone Number">
+			
+				<select id="slt" class="select">
+					
+					<option value="default" selected hidden>Home Country</option>
+					
+					<option value="">Nigeria</option>
+			
+					<option value="">Ghana</option>
+			
+					<option value="">USA</option>
+					
+				</select>
+			
+				<button id="submitButton">Save Changes</button>
 			
 			</form>
 		
-			<label id="power">Powered by: <img src="images/paypal.jpg"></img> </label>
+			
 			
 		</div>
 		

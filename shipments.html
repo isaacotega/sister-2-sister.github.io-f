@@ -8,13 +8,13 @@
 			
 		<link rel="stylesheet" href="styles/index.css" type="text/css"/>
 		
-		<link rel="stylesheet" href="styles/hire-shipper.css" type="text/css"/>
+		<link rel="stylesheet" href="styles/shipments.css" type="text/css"/>
 		
 		<script>
 			
 			var page = {
 				rootPath: "",
-				activeNav: "shippers"
+				activeNav: "shipments"
 			}
 			
 		</script>
@@ -23,7 +23,7 @@
 		
 		<script src="scripts/index.js"></script>
 		
-		<script src="scripts/shippers.js"></script>
+		<script src="scripts/shipments.js"></script>
 		
 	</head>
 		
@@ -31,13 +31,13 @@
 	
 		<header>
 		
-			<span id="backIcon">
+			<span id="menuIcon">
 				
-				<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z" fill-rule="nonzero"/></svg>
+				<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
 			
 			</span>
 			
-			<label id="appText">Hire Shipper</label>
+			<label id="appText">Your Shipments</label>
 			
 			<span id="iconHolder">
 			
@@ -65,23 +65,8 @@
 				
 		<div id="main">
 		
-			
-			<form class="form" id="hireForm" action="checkout.html">
-			
-				<input type="text" id="inp" class="input" placeholder="Detail 1">
-			
-				<input type="text" id="inp" class="input" placeholder="Detail 2">
-			
-				<input type="text" id="inp" class="input" placeholder="Detail 3">
-			
-				<input type="text" id="inp" class="input" placeholder="Detail 4">
-			
-				<button id="submitButton">Proceed to Payment</button>
-			
-			</form>
+			<div id="shipmentsHolder"></div>
 		
-			
-			
 		</div>
 		
 		
