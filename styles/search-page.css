@@ -1,0 +1,198 @@
+ header {
+	width: 100%;
+	height: 8vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 8;
+	background-color: #FF000000;
+}
+
+header #appText {
+	margin: 0;
+	line-height: 8vh;
+	font-size: 38px;
+	font-weight: 700;
+	color: white;
+	margin-left: 3vw;
+	display: inline-block;
+}
+
+header [hasSubtext] {
+	transform: translateY(-15px);
+}
+
+header #subText {
+	margin: 0;
+	line-height: 2vw;
+	font-size: 25px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.8);
+	fill: white;
+	margin-left: 3vw;
+	display: block;
+	margin-left: 32px;
+	transform: translateY(-180%);
+}
+ 
+header #iconHolder {
+	height: 90px;
+	line-height: 70px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+ 
+header #iconHolder .icon {
+	margin: 20px 50px;
+	display: block;
+}
+ 
+header #iconHolder .icon svg {
+	height: 70px;
+	width: 70px;
+	transform: translateY(35px);
+	fill: black;
+	transition: 0.3s background-color;
+}
+ 
+header #iconHolder .icon:active {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+header #menuIcon svg {
+	height: 60px;
+	width: 60px;
+	transform: translateY(15px);
+	fill: white;
+	margin-left: 5mm;
+}
+
+header #menuIcon:active {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+header #backIcon svg {
+	height: 70px;
+	width: 70px;
+	transform: translateY(15px);
+	fill: white;
+	margin-left: 5mm;
+}
+
+#backgroundFillHolder {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+}
+
+#backgroundFillHolder #image {
+	width: 50%;
+	margin: 10% 25% 0 25%;
+	padding: 0;
+}
+
+#backgroundImage {
+	width: 100%;
+	position: fixed;
+	top: 60%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 0;
+}
+
+#searchHolder {
+	width: 86%;
+	height: 120px;
+	background-color: rgba(0, 0, 0, 0.15);
+	border-radius: 30px;
+	margin: 0 7%;
+	transform: translateY(-70px);
+	position: relative;
+	z-index: 1;
+}
+
+#searchHolder svg {
+	width: 80px;
+	height: 80px;
+	margin: 20px 0px 0 20px;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.4; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: black;
+}
+
+#searchHolder input {
+	width: 60%;
+	height: 60px;
+	margin: 0px 0px 0 20px;
+	transform: translateY(-30px);
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 38px;
+	border: none;
+}
+
+#container {
+	position: relative;
+	z-index: 1;
+}
+
+#container #sistersLabel {
+	margin: 0 10px 50px 100px;
+	display: block;
+	font-size: 45px;
+	font-weight: 650;
+	color: #FF6EC7;
+	font-family: Arial, sans-serif;
+}
+
+#container #sistersHolder {
+	margin: 0;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#container #sistersHolder .sister {
+	margin: 0;
+	display: inline-block;
+	width: 24.5%;
+	padding: 0;
+	text-align: center;
+}
+
+#container #sistersHolder .sister img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+#container #sistersHolder .sister #name {
+	display: block;
+	font-size: 35px;
+	font-weight: 500;
+	margin: 10px 0;
+	font-family: Arial, sans-serif;
+}
+
+#container #sistersHolder .sister #country {
+	display: block;
+	font-size: 35px;
+	font-weight: 500;
+	margin: 0px 0;
+	font-family: Arial, sans-serif;
+}

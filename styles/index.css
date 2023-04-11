@@ -1,5 +1,40 @@
+/*
+
+Colors
+
+#C08189#CCA2A2RGBA(0, 0, 0, 0.3)
+
+Logo
+
+Logo 1 ￼Logo 2 ￼
+
+Font Family
+
+Poppins 
+
+Font Sizes
+
+- SmallText: 12px - MediumText: 14px - LargeText: 24px
+
+
+
+*/
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+}
+
 body {
-	 background: white;
+	 background-color: white;
 	 margin: 0;
 	-webkit-user-select: none;
 	font-family: calibri;
@@ -51,8 +86,9 @@ a:image-link:focus {
 
 #main {
 	margin-top: 115px;
+	 background-color: white;
 }
- 
+ /*
  header {
 	width: 100%;
 	height: 8vh;
@@ -152,7 +188,7 @@ header #backIcon svg {
 	fill: white;
 	margin-left: 5mm;
 }
-
+*/
 header #menuHolder {
 	display: none;
 	position: fixed;
@@ -208,46 +244,73 @@ header #menuHolder .option:active {
 
 #bottomNav {
 	position: fixed;
-	left: -1.5%;
+	left: 0;
 	bottom: 0;
-	height: 120px;
-	width: 106%;
+	height: 130px;
+	width: 100%;
 	overflow: hidden;
-	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.8);
-	background-color: #DE5D82;
-	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%), linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%), linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%);
-	background-size:20px 20px;
-	background-position: 0 0, 0 10px, 10px -10px, -10px 0px;	
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+	background-color: #FF6EC7;
+	border-radius: 50px 50px 0 0;
+	text-align: center;
 }
 
 #bottomNav .item {
-	width: 19.5%;
+	width: 18%;
 	display: inline-block;
 	text-align: center;
-	height: 300%;
-	border-radius: 50%;
-	transform: translateY(-38%);
+	height: 200%;
+	border-radius: 100%;
+	transform: translateY(-23%);
 	transition: background-color 0.2s;
+//	background-color: rgba(255, 255, 255, 0.2);
 }
 
 #bottomNav .item:active {
 	background-color: rgba(255, 255, 255, 0.2);
-	
 }
 
 #bottomNav .item svg {
-	width: 45px;
-	height: 45px;
-	margin-top: 73%;
+	width: 60px;
+	height: 60px;
+	margin-top: 53%;
 	fill: white;
+}
+
+#bottomNav #homeIcon {
+	width: 90px;
+	height: 90px;
+	position: fixed;
+	bottom: -60px;
+	left: 50%;
+	transform: translateY(-100px) translateX(-50%);
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0 13px 10px rgba(0, 0, 0, 0.3);
+	margin: 0;
+	padding: 30px;
+	transition: background-color 0.2s;
+}
+
+#bottomNav #homeIcon svg {
+	width: 90px;
+	height: 90px;
+	fill: #FF6EC7;
+	margin: 0;
+	padding: 0;
+}
+
+#bottomNav #homeIcon:active {
+	background-color: rgba(255, 195, 255, 1);
 }
 
 #bottomNav .item #hint {
 	color: white;
 	font-size: 20px;
 	line-height: 45px;
+	display: none;
 }
-
+/*
 #bottomNav [active] {
 	background-color: rgba(0, 0, 0, 0);
 }
@@ -264,7 +327,7 @@ header #menuHolder .option:active {
 	font-size: 22px;
 	font-weight: 700;
 }
-
+*/
 /* Loader */
 
 .loader {
@@ -294,21 +357,34 @@ header #menuHolder .option:active {
 /* Forn */
 
 .form {
+	width: 94%;
+	text-align: center;
+	margin: 100px 0 0 3%;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+	padding: 90px 0;
+	border-radius: 50px;
+}
+
+.form .label {
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
 	width: 100%;
 	text-align: center;
-	margin-top: 150px;
+	margin: 0 0 0 0;
+	color: black;
 }
 
 .form .input {
-	width: 80%;
-	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
-	height: 100px;
-	margin: 20px 0;
+	width: 70%;
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 70px;
+	margin: 70px 0;
 	font-size: 36px;
 	color: white;
-	text-indent: 8px;
+	padding: 0 40px;
 	border: 0px solid;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 .form .textarea {
@@ -335,31 +411,58 @@ header #menuHolder .option:active {
 	border-radius: 10px;
 }
 
-.form #submitButton {
-	width: 60%;
-	display: block;
-	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
-	height: 100px;
-	margin: 20px 30%;
-	font-size: 38px;
-	color: white;
-	text-indent: 5px;
-	border: 0px solid;
-	border-radius: 3px;
-	transition: 0.3s background-color;
-}
-
-.form #submitButton:active {
-	background-color: rgba(0, 0, 0, 0.7);
-}
-
-.form .label {
+.form #buttonHolder {
+	width: 70%;
 	display: inline-block;
-	transform: translateY(-20px);
-	font-size: 25px;
+	transform: translateX(40px);
+	text-align: right;
+}
+
+.form #buttonHolder button {
+	width: 230px;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 70px;
+	margin: 40px 0 0 20px;
+	font-size: 45px;
 	color: white;
-	width: 80%;
-	text-align: left;
+	text-align: center;
+	border: 0px solid;
+	border-radius: 20px;
+	transition: 0.1s background-color;
+}
+
+.form #buttonHolder #submitButton {
+	font-weight: 550;
+	background-color: #FF6EC7;
+}
+
+.form #buttonHolder #normalButton {
+	font-weight: 500;
+	color: black;
+}
+
+.form #buttonHolder #submitButton:active {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form .longButton {
+	width: 73%;
+	display: inline-block;
+	height: 70px;
+	margin: 0 0 0 20px;
+	font-size: 45px;
+	color: white;
+	text-align: center;
+	border: 0px solid;
+	border-radius: 20px;
+	transition: 0.1s background-color;
+	font-weight: 550;
+	background-color: #FF6EC7;
+}
+
+.form .longButton:active {
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Animation */

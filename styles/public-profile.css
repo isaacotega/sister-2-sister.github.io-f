@@ -2,36 +2,269 @@
 	padding-bottom: 180px;
 }
 
-#profile {
-	padding: 5px 10px;
+
+ header {
+	width: 100%;
+	height: 8vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 8;
+	background-color: #FF000000;
 }
 
-#profile #profilePicture {
-	width: 430px;
-	height: 460px;
-	border-radius: 20px;
+header #appText {
+	margin: 0;
+	line-height: 8vh;
+	font-size: 38px;
+	font-weight: 700;
+	color: white;
+	margin-left: 3vw;
+	display: inline-block;
+}
+
+header [hasSubtext] {
+	transform: translateY(-15px);
+}
+
+header #subText {
+	margin: 0;
+	line-height: 2vw;
+	font-size: 25px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.8);
+	fill: white;
+	margin-left: 3vw;
+	display: block;
+	margin-left: 32px;
+	transform: translateY(-180%);
+}
+ 
+header #iconHolder {
+	height: 90px;
+	line-height: 70px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+ 
+header #iconHolder .icon {
+	margin: 0 20px;
+	display: block;
+}
+ 
+header #iconHolder .icon svg {
+	height: 70px;
+	width: 70px;
+	transform: translateY(35px);
+	fill: white;
+	transition: 0.3s background-color;
+}
+ 
+header #iconHolder .icon:active {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+header #menuIcon svg {
+	height: 60px;
+	width: 60px;
+	transform: translateY(15px);
+	fill: white;
+	margin-left: 5mm;
+}
+
+header #menuIcon:active {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+header #backIcon svg {
+	height: 70px;
+	width: 70px;
+	transform: translateY(15px);
+	fill: white;
+	margin-left: 5mm;
+}
+
+#backgroundFillHolder {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#backgroundFillHolder #image {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#profile {
+	padding: 5px 10px;
+	font-family: Arial, sans-serif;
+}
+
+
+
+#profile #profilePictureHolder {
+	width: 65vw;
+	height: 65vw;
+	margin: 0 17.5% -50% 17.5%;
+	background-color: white;
+	transform: translateY(-75%);
+	border-radius: 50%;
+	position: relative;
+}
+
+#profile #profilePictureHolder #bordered {
+	width: 55vw;
+	height: 55vw;
+	margin: 5vw;
+	border-radius: 50%;
+	display: block;
+	transform: translateY(5vw);
+	border: 5px solid #FF6EC7;
+}
+
+#profile #profilePictureHolder #bar {
+	width: 200px;
+	height: 60vw;
+	background-color: white;
+	display: inline-block;
+	position: absolute;
+	top: 0vw;
+	left: 50%;
+	transform: translateX(-45%) rotate(-70deg);
+	border-radius: 10px;
+	z-index: 0;
+}
+
+#profile #profilePictureHolder #profilePicture {
+	width: 52vw;
+	height: 52vw;
+	margin: 1.5vw;
+	border-radius: 50%;
+	z-index: 1;
+	position: relative;
 }
 
 #profile #username {
 	display: block;
-	font-size: 60px;
-	line-height: 150px;
+	font-size: 53px;
+	line-height: 55px;
 	font-weight: 700;
+	color: #FF6EC7;
+	width: 100%;
+	text-align: center;
 }
 
-#profile #location {
+#profile #profileType {
 	display: block;
-	font-size: 30px;
+	font-size: 35px;
+	line-height: 55px;
+	font-weight: 700;
+	color: rgba(0, 130, 0, 0.80);
+	width: 100%;
+	text-align: center;
 }
 
-#profile svg {
-	height: 30px;
-	width: 30px;
+#profile .box {
+	display: block;
+	width: 90%;
+	margin: 10px 5%;
+	text-align: center;
 }
 
-#profile label {
-	font-size: 30px;
+#profile #box1 {
+	border-left: 3px solid rgba(0, 0, 0, 0.08);
+	border-bottom: 35px solid rgba(0, 0, 0, 0.08);
+	padding-bottom: 50px;
+	margin-top: 50px;
 }
+
+#profile #box2 {
+	border-right: 3px solid rgba(0, 0, 0, 0.08);
+	border-top: 25px solid rgba(0, 0, 0, 0.08);
+	border-bottom: 25px solid rgba(0, 0, 0, 0.08);
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+
+#profile .box .keyLabel {
+	display: inline-block;
+	width: 43%;
+	margin: 30px 1.8%;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 38px;
+	color: black;
+	text-align: center;
+	border: 0px solid;
+	border-radius: 20px;
+	transition: 0.1s background-color;
+	font-weight: 600;
+	background-color: #FF6EC7;
+}
+
+#profile .box .valueLabel {
+	display: inline-block;
+	width: 43%;
+	margin: 30px 1.8%;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 38px;
+	color: black;
+	text-align: center;
+	border: 0px solid;
+	border-radius: 20px;
+	transition: 0.1s background-color;
+	font-weight: 600;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+
+#profile .box .valueLabel img {
+	display: inline-block;
+	width: 50px;
+	margin: 0 30px;
+	position: absolute;
+	right: 0px;
+	top: 20px;
+}
+
+#profile #box1 #sma {
+	width: 58%;
+	margin: 30px 1%;
+}
+
+#profile #box1 #smaValue {
+	width: 30%;
+	margin: 30px 1%;
+}
+
+#profile #box2 #sr {
+	width: 30%;
+	margin: 15px 1%;
+}
+
+#profile #box2 #srValue {
+	width: 58%;
+	margin: 15px 1%;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#profile #box2 #srValue svg {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	fill: rgba(0, 0, 0, 0.1);
+	margin: 5px 5px 0 5px;
+	transform: translateY(18px);
+}
+
+
 
 #profile #ratings {
 	width: 100%;

@@ -4,16 +4,12 @@ $(document).ready(function() {
 	
 		event.preventDefault();
 		
-		$(this).find("#submitButton").html("<div class='loader'></div>");
-		
-		setTimeout(function() {
+	})
+
+	$("#paymentForm2").submit(function() {
 	
-			alert("Validated");
+		event.preventDefault();
 		
-			$("#paymentForm #submitButton").css({border: "5px solid green"}).html("Checkout").attr("disabled", "true");
-			
-		}, 500);
-	
 	})
 
 });

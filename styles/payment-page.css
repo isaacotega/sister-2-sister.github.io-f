@@ -1,102 +1,19 @@
-#lblAmount {
-	font-size: 40px;
-	display: block;
-	width: 100%;
-	text-align: center;
-	margin: 0 0 0 0;
-}
-
- #amount {
-	font-size: 45px;
-	color: green;
-}
-
 #paymentForm {
-	width: 100%;
-	text-align: center;
-	margin-top: 150px;
+	font-family: Arial, sans-serif;
 }
 
-#paymentForm .input {
-	width: 80%;
-	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
-	height: 100px;
-	margin: 20px 0;
-	font-size: 36px;
-	color: white;
-	text-indent: 8px;
-	border: 0px solid;
-	border-radius: 10px;
+#paymentForm input {
+	font-family: Arial, sans-serif;
 }
 
-#paymentForm #inpCVV {
-	width: 40%;
+#paymentForm2 {
+	font-family: times;
 }
 
-#paymentForm #inpExpirationDate {
-	width: 40%;
+#paymentForm2 input {
+	font-family: times;
 }
 
-#paymentForm .textarea {
-	width: 80%;
-	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
-	height: 200px;
-	margin: 13px 0;
-	font-size: 36px;
-	color: white;
-	text-indent: 8px;
-	border: 0px solid;
-	border-radius: 10px;
-}
-
-#paymentForm .select {
-	width: 80%;
-	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
-	height: 100px;
-	margin: 20px 0;
-	font-size: 36px;
-	color: white;
-	text-indent: 8px;
-	border: 0px solid;
-	border-radius: 10px;
-}
-
-#paymentForm #submitButton {
-	width: 60%;
-	display: block;
-	background-image: linear-gradient(to right, #DE5D82, #DE5D99);
-	height: 100px;
-	margin: 20px 30%;
-	font-size: 38px;
-	color: white;
-	text-indent: 5px;
-	border: 0px solid;
-	border-radius: 3px;
-	transition: 0.3s background-color;
-}
-
-#paymentForm #submitButton:active {
-	background-color: rgba(0, 0, 0, 0.7);
-}
-
-#paymentForm .label {
-	display: inline-block;
-	transform: translateY(-20px);
-	font-size: 25px;
-	color: white;
-	width: 80%;
-	text-align: left;
-}
-
-#power {
-	font-size: 30px;
-	display: block;
-	width: 100%;
-	text-align: center;
-	margin: 100px 0 0 0;
-}
-
-#power img {
-	height: 50px;
-	transform: translateY(30%);
+#paymentForm2 button {
+	font-family: times;
 }
